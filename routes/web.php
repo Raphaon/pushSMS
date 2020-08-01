@@ -35,6 +35,16 @@ Route::get('/register', [
     'as' => 'register'
 ]);
 
+Route::get('/activationAccount/{customerID}', [
+    'uses' => 'CustomerController@activateAccount',
+    'as' => 'activationMail'
+]);
+
+
+Route::get('/activateMessage', [
+    'uses' => 'CustomerController@activateMessage',
+    'as' => 'activationMessage'
+]);
 
 
 Route::get('/passwordrecovery', [

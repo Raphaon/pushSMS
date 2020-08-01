@@ -52,11 +52,18 @@ class CustomerController extends Controller
          $custom->email = request('email');
          $custom->password = sha1(md5(request('password')));
          $custom->customerPhone = request('phone');
-         $custom->isActivate = 0;
+         $custom->active = 0;
          $custom->rememberTokenActivate = 0;
-        if($custom->isExist()){
-            if ($custom->save()) {
-                return 'inscription reussi !';
+        if(!$custom->isExist()){
+            if ($custom->save()) 
+            {
+                $subject = 'Activation Account';
+                $msg = "Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser \n".route('activationMail', ['customerID'=>$custom->customerID ])." si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur \n Merci de votre confiance";
+                mail($custom->email , $subject, $msg);
+                session()->flash('mailToActivate', $custom->email);
+                return redirect('/activateMessage');
+
+                
             }
             return 'Une Erreur est survenue lors de lenregistrement ';
         }
@@ -88,6 +95,18 @@ class CustomerController extends Controller
         return redirect('login');
     }
 
+     public function activateAccount(Request $request)
+     {
+        $custom = Customer::where('customerID', request('customerID'))->Update(['active'=> 1]);    
+            return view('Customer.confirmationNotification');
+    
+     }
+
+
+
+
+
+
     public function logout()
     {
       if(Session::has('customer')){
@@ -101,6 +120,13 @@ class CustomerController extends Controller
     public function newForfais()
     {
 
+    }
+
+    public function activateMessage()
+    {
+        if(session()->has('mailToActivate'))
+            return view('./Customer/mailActivation');
+        return redirect('login');
     }
     public function recovery()
     {

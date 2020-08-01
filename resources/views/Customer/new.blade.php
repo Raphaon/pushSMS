@@ -26,6 +26,13 @@
 </head>
 
 <body class="signup-page">
+
+    
+    @foreach ($errors->all() as $error)
+              <div class="alert alert-danger">
+                    <strong>ERREUR  :</strong> {{ $error }}.
+              </div>   
+    @endforeach
     <div class="signup-box">
         <div class="logo">
             <a href="javascript:void(0);">PUSH<b>SMS</b></a>
@@ -34,13 +41,14 @@
         <div class="card">
             <div class="body">
                 <form id="sign_up" action="{{ route('saveCustomer') }}" method="POST">
+                {{ csrf_field() }}
                     <div class="msg">Register a new membership</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" name="namesurname" placeholder="Name Surname" required autofocus>
+                            <input type="text" class="form-control" name="name" placeholder="Name Surname" required autofocus>
                         </div>
                     </div>
                     <div class="input-group">
@@ -56,7 +64,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" minlength="6" placeholder="Password" required>
+                            <input type="password" class="form-control" name="password" minlength="8" placeholder="Password" required>
                         </div>
                     </div>
                     <div class="input-group">
@@ -64,7 +72,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="confirm" minlength="6" placeholder="Confirm Password" required>
+                            <input type="password" class="form-control" name="password_confirmation" minlength="8" placeholder="Confirm Password" required>
                         </div>
                     </div>
                     <div class="input-group">
@@ -114,31 +122,8 @@
 
 
 
-<form action="{{ route('saveCustomer') }}" method="post">
-    {{ csrf_field() }}
-    Name * : <input type="text" name="name" id="">
-    @if ($errors->has('name'))
-        {{ $errors->first('name') }}
-    @endif
-    <br><br>
-    Surname : <input type="text" name="surname" id=""> <br><br>
-    Email * : <input type="email" name="email" id="">
-    @if ($errors->has('email'))
-        {{ $errors->first('email') }}
-    @endif
-    <br><br>
-    Password * : <input type="password" name="password" id="">
-     @if ($errors->has('password'))
-        {{ $errors->first('password') }}
-    @endif
-    <br><br>
-    Password confirmation : <input type="password" name="password_confirmation" id=""><br><br>
-    phone : <input type="tel" name="phone" id=""> 
-    <input type="submit" value="Valider">
+
+    
+    
 
 
-
-    @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-    @endforeach
-</form>
