@@ -24,6 +24,10 @@ class CustomerController extends Controller
      return view('Customer.index');
     }
 
+
+
+
+
     public function login()
     {
 

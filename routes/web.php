@@ -63,3 +63,26 @@ Route::post('/auth', [
     'uses' => 'CustomerController@authentification',
     'as' => 'auth'
 ]);
+
+
+
+
+
+Route::get('/newMessage', [
+    'uses' => 'MessageController@new',
+    'as' => 'newMessage'
+]);
+
+
+Route::get('/messages', [
+    'uses' => 'MessageController@index',
+    'as' => 'messages'
+]);
+
+
+
+
+Route::post('/saveMessage', [
+    'uses' => 'MessageController@create',
+    'as' => 'sendingMessage'
+]);

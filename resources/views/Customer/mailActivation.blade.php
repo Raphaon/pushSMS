@@ -37,8 +37,10 @@
                     <div class="msg">
                         Merci  de nous avoir fait confiance en vous inscrivant <br>Il ne vous reste plus qu'une Etape. 
                        Rendez vous  à l'adresse de messagerie
-                       <div ></div>
-                       {{ session('mailToActivate') }}  nous vous avons envoyé un mail pour activer votre compte.
+                       <div class="alert alert-primary">
+                            {{ session('mailToActivate') }} 
+                       </div>
+                        nous vous avons envoyé un mail pour activer votre compte.
 
                     </div>
                 </form>

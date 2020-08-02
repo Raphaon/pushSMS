@@ -172,3 +172,47 @@
 20/08/01 18:16:08 ** Disconnecting from smtp.gmail.com:587
 20/08/01 18:16:08 ** Disconnected.
 20/08/01 18:16:08 ** Disconnected.
+20/08/01 21:14:49 ** --- MESSAGE BEGIN ---
+20/08/01 21:14:49 ** To: raphaondobo@gmail.com
+20/08/01 21:14:49 ** Subject: Activation Account
+20/08/01 21:14:49 ** 
+20/08/01 21:14:49 ** Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser 
+20/08/01 21:14:49 ** http://192.168.8.103:8000/activationAccount/7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323 si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur 
+20/08/01 21:14:49 **  Merci de votre confiance
+20/08/01 21:14:49 ** --- MESSAGE END ---
+20/08/01 21:14:52 ** Connecting to smtp.gmail.com:587
+20/08/01 21:14:53 ** Connected.
+20/08/01 21:14:53 << 220 smtp.gmail.com ESMTP u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:14:53 >> EHLO MARTINS.gmail.com<EOL>
+20/08/01 21:14:54 << 250-smtp.gmail.com at your service, [154.72.167.2]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/01 21:14:54 ** Authenticating as pushsmsinfo@gmail.com
+20/08/01 21:14:54 >> STARTTLS<EOL>
+20/08/01 21:14:54 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/01 21:14:54 >> EHLO MARTINS.gmail.com<EOL>
+20/08/01 21:14:54 << 250-smtp.gmail.com at your service, [154.72.167.2]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/01 21:14:54 >> AUTH LOGIN<EOL>
+20/08/01 21:14:57 << 334 VXNlcm5hbWU6<EOL>
+20/08/01 21:14:57 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/01 21:14:57 << 334 UGFzc3dvcmQ6<EOL>
+20/08/01 21:14:57 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/01 21:14:58 << 235 2.7.0 Accepted<EOL>
+20/08/01 21:14:58 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/01 21:14:58 << 250 2.1.0 OK u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:14:58 >> RCPT TO: <raphaondobo@gmail.com><EOL>
+20/08/01 21:14:58 << 250 2.1.5 OK u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:14:58 >> DATA<EOL>
+20/08/01 21:14:59 << 354  Go ahead u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:14:59 >> Date: Sat, 1 Aug 2020 21:14:59 +0100<EOL>
+20/08/01 21:14:59 >> To: raphaondobo@gmail.com<EOL>
+20/08/01 21:14:59 >> Subject: Activation Account<EOL>
+20/08/01 21:14:59 >> <EOL>
+20/08/01 21:14:59 >> Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser <EOL>
+20/08/01 21:14:59 >> http://192.168.8.103:8000/activationAccount/7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323 si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur <EOL>
+20/08/01 21:14:59 >>  Merci de votre confiance<EOL>
+20/08/01 21:14:59 >> .<EOL>
+20/08/01 21:15:00 << 250 2.0.0 OK  1596312899 u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:15:00 >> QUIT<EOL>
+20/08/01 21:15:09 << 221 2.0.0 closing connection u17sm16959957wrp.70 - gsmtp<EOL>
+20/08/01 21:15:09 ** Disconnected.
+20/08/01 21:15:09 ** Disconnected.
+20/08/01 21:15:09 ** Disconnected.

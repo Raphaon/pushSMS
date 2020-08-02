@@ -27,7 +27,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="../../index.html">
+                    <a href="{{ route('dashboard') }}">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -367,7 +367,7 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);"> PUSH SMS </a>.
+                    &copy; 2020 - 2035 <a href="javascript:void(0);"> PUSH SMS </a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0.5

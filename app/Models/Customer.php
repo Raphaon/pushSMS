@@ -31,10 +31,14 @@ class Customer extends Model implements Authenticatable
         return Message::where('customerID', $this->reffCustomer)->get();
     }
 
+    public function getAvailablleSMS()
+    {
+        return Forfais::where('customerReff', $this->customerID)->sum('remainingSMS');
+    }
 
     public function getForfais()
     {
-        return Forfais::where('customerID', $this->reffCustomer)->get();
+        return Forfais::where('customerReff', $this->customerID)->get();
     }
 
 
