@@ -33,10 +33,30 @@
         </div>
         <div class="card">
             <div class="body">
-                <form id="forgot_password" >
+                <form id="forgot_password" method="POST">
                     <div class="msg">
-                            {{ session('mailToActivate') }} 
+                       Fill the form and change your password 
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="password" placeholder="New password" required autofocus>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="password_confirmation" placeholder="Confrm your new password" required autofocus>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">Save</button>
 
+                    <div class="row m-t-20 m-b--5 align-center">
+                        <a href="{{route('login')}}">Sign In!</a>
                     </div>
                 </form>
             </div>

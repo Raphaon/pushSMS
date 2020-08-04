@@ -21,19 +21,19 @@ class Customer extends Model implements Authenticatable
         return false;
     }
 
-    public function getProject()
+    public function getProjects()
     {
-        return Project::where('customerID', $this->reffCustomer)->get();
+        return Project::where('customerReff', $this->customerID)->get();
     }
 
     public function getMessage()
     {
-        return Message::where('customerID', $this->reffCustomer)->get();
+        return Message::where('customerID', $this->customerID)->get();
     }
 
     public function getAvailablleSMS()
     {
-        return Forfais::where('customerReff', $this->customerID)->sum('remainingSMS');
+        return Forfais::where('customerReff', $this->customerID)->where('statusForfais', 'valide')->sum('remainingSMS');
     }
 
     public function getForfais()

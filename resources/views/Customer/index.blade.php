@@ -27,11 +27,11 @@
                         <div class="content">
                             <div class="text">SMS</div>
                             <div class="number">
-                                {{session('customer')->getAvailablleSMS()}}
+                                {{ session('customer')->getAvailablleSMS()}}
                             </div>
                         </div>
                     </div>
-
+                
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-blue hover-zoom-effect">

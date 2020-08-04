@@ -47,10 +47,7 @@ Route::get('/activateMessage', [
 ]);
 
 
-Route::get('/passwordrecovery', [
-    'uses' => 'CustomerController@recovery',
-    'as' => 'passwordrecovery'
-]);
+
 
 
 Route::post('/register', [
@@ -85,4 +82,36 @@ Route::get('/messages', [
 Route::post('/saveMessage', [
     'uses' => 'MessageController@create',
     'as' => 'sendingMessage'
+]);
+
+
+
+
+
+Route::get('/projects', [
+    'uses' => 'ProjectController@index',
+    'as' => 'projects'
+]);
+
+
+
+
+Route::get('/resetpassword/{token}', [
+    'uses' => 'CustomerController@resetPassword',
+    'as' => 'resetpassword'
+]);
+
+Route::post('/changepassword', [
+    'uses' => 'CustomerController@changePassword',
+    'as' => 'changepassword'
+]);
+
+Route::get('/passwordrecovery', [
+    'uses' => 'CustomerController@recovery',
+    'as' => 'passwordrecovery'
+]);
+
+Route::post('/MailRecovery', [
+    'uses' => 'CustomerController@MailRecovery',
+    'as' => 'MailRecovery'
 ]);

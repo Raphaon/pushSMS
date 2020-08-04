@@ -7,15 +7,24 @@ use Illuminate\Database\Eloquent\Model;
 class Mail extends Model
 {
 
-    protected $to ;
-    protected $sender;
-    protected $subject;
-    protected $mailContent;
-    protected $from;
+    public $to ;
+    public $sender;
+    public $subject;
+    public $content;
+    public $from;
 
     public function send()
     {
-        //mb_send_mail($this)
-        return true ;
+       if($this->to!='' and  $this->subject !='' and $this->content != '')
+       {
+           
+            if( mail($this->to, $this->subject, $this->content))
+            {
+                return true;
+            }
+       }
+       return false;       
     }
+
+
 }

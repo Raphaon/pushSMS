@@ -17,11 +17,12 @@ class Message extends Model
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $response = curl_exec($ch);
-            return $response = json_decode($response, true);
+            $response = json_decode($response, true);
             curl_close($ch);
+            return true ;
         }
 
-        return 'Echec d envoi';
+        return false;
        
     }
 }

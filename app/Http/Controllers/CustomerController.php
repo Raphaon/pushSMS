@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use App\Models\Customer;
 use App\Models\Forfais;
+use App\Models\Mail;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Message;
@@ -38,11 +39,15 @@ class CustomerController extends Controller
 
     public function new()
     {
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
         return view('Customer.new');
     }
 
     public function create(Request $request)
     {
+       
         request()->validate([
             'name'=> ['required'],
             'email'=>  ['required', 'email'],
@@ -62,12 +67,28 @@ class CustomerController extends Controller
             if ($custom->save()) 
             {
                 $subject = 'Activation Account';
-                $msg = "Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser \n".route('activationMail', ['customerID'=>$custom->customerID ])." si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur \n Merci de votre confiance";
-                mail($custom->email , $subject, $msg);
-                session()->flash('mailToActivate', $custom->email);
-                return redirect('/activateMessage');
+                $msg = "Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser \n" . route('activationMail', ['customerID' => $custom->customerID]) . " si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur \n Merci de votre confiance";
+                $mail = new Mail();
+                $mail->to = $custom->email;
+                $mail->subject = $subject;
+                $mail->content = $msg;
 
+                $message = 'Merci  de nous avoir fait confiance en vous inscrivant.  Il ne vous reste plus qu\'une Etape. 
+                       Rendez vous  à l\'adresse de messagerie '.
+                             $mail->to.'. 
+                        Nous vous avons envo    yé un mail pour activer votre compte.';
+
+                if($mail->to !='' and $mail->subject !='' and $mail->content !='')
+                {
+                    if(!$mail->send())
+                    {
+                        $message = 'Nous navons pas pu vous envoyer un mail à ladresse '. $mail->to.' verifiez le mail fournis et reesayer';
+                    }
+                }
+               
                 
+                session()->flash('mailToActivate', $message);
+                return redirect('/activateMessage');
             }
             return 'Une Erreur est survenue lors de lenregistrement ';
         }
@@ -78,6 +99,7 @@ class CustomerController extends Controller
 
     public function authentification(Request $request)
     {
+        
         request()->validate([
             'email'=> ['required', 'email'],
             'password'=> ['required']
@@ -99,13 +121,17 @@ class CustomerController extends Controller
         return redirect('login');
     }
 
-     public function activateAccount(Request $request)
-     {
-        $custom = Customer::where('customerID', request('customerID'))->Update(['active'=> 1]);    
-            return view('Customer.confirmationNotification');
-    
-     }
+        public function  activateAccount(Request $request)
+        {
+            $custom = Customer::where('customerID', request('customerID'))->Update(['active'=> 1]);    
+                return view('Customer.confirmationNotification');
+        
+        }
 
+      public function recoveryPassword()
+      {
+          return view('Customer/passwordrecovery');
+      }
 
 
 
@@ -146,6 +172,37 @@ class CustomerController extends Controller
         ]);
     }
 
+
+    public function resetpassword(Request $request)
+    {
+        $token = request('token');
+        return view('Customer.resetPassword');
+    }
+
+
+
+    public function changePassword(Request $request)
+    {
+        request()->validate([
+            'password' =>  ['required', 'confirmed']
+        ]);
+    }
+
+
+    public function MailRecovery(Request $request)
+    {
+        request()->validate([
+            'email' =>  ['required', 'email']
+        ]);
+        $mail = new Mail();
+        $mail->to = request('email');
+        $mail->subject = 'PASSWORD RECOVERY';
+        $link = route('resetpassword' ,['token'=> 'texttoken']);
+        $mail->content = 'Vous avez Solliciter la reinitialisation de votre mot de passe  Si tel est le cas cliquez sur le lien ci '. $link. '> Si ce n est pas vous ignorez tout simplement ce message.';
+        //dd($mail->content);
+        return $mail->send();
+
+    }
    
 
 

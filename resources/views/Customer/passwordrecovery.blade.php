@@ -33,7 +33,12 @@
         </div>
         <div class="card">
             <div class="body">
-                <form id="forgot_password" method="POST">
+            <form id="forgot_password" method="POST" action="{{ route('MailRecovery') }}">
+                {{ csrf_field() }}
+
+                    @if ($errors->has('email'))
+                        <div class="alert alert-danger">{{ $errors->first() }}</div>
+                    @endif
                     <div class="msg">
                         Enter your email address that you used to register. We'll send you an email with your username and a
                         link to reset your password.
