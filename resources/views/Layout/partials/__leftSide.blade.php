@@ -60,7 +60,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="{{ route('messages') }}">Repertoires</a>
+                                <a href="{{ route('repertoires') }}">Repertoires</a>
                             </li>
                             <li>
                                 <a href="{{ route('newMessage') }}">Add Contacts</a>

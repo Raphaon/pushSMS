@@ -115,3 +115,21 @@ Route::post('/MailRecovery', [
     'uses' => 'CustomerController@MailRecovery',
     'as' => 'MailRecovery'
 ]);
+
+
+Route::get('/repertoires', [
+    'uses' => 'RepertoireController@index',
+    'as' => 'repertoires'
+]);
+
+
+
+Route::get('/repertoire/new', [
+    'uses' => 'RepertoireController@new',
+    'as' => 'newRepertoire'
+]);
+
+Route::post('/saveRepertoire', [
+    'uses' => 'RepertoireController@store',
+    'as' => 'saveRepertoire'
+]);

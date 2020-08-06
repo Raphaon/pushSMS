@@ -12,7 +12,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                     <a href="{{ route('newMessage') }}" class="btn bg-red btn-circle-lg waves-effect waves-circle waves-float" >
-                        <i class="material-icons">chat</i>
+                        <i class="material-icons">add</i>
                     </a>
         
                         <div class="body">
