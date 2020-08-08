@@ -13,4 +13,13 @@ class Repertoire extends Model
         return Contact::where('repertoireReff', $this->Repert_id)->get();
     }
 
+    public function isExist()
+    {
+        if(Repertoire::where('customerReff', session('customer')->customerID)->where('Repert_name', $this->Repert_name)->count()>0)
+            return true;
+        return false;
+    }
+
+
+
 }

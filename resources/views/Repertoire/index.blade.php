@@ -11,7 +11,7 @@
                                 <h2>{{ $repertoire->Repert_name }} <small> Create on : {{ $repertoire->created_at }}</small> </h2>
                             </div>
                             <div class="body">
-                                Descriptt : {{ $repertoire->Repert_description }} <br><br>
+                                {{ $repertoire->Repert_description }} <br><br>
                             </div>
                     </div>
                 </div>
@@ -23,6 +23,18 @@
             <div class="alert alert-info">Auccun Projects </div> 
         @endif
            
+            <a href="{{ route('newRepertoire') }}">
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                    <div class="card">
+                         <div class="header">
+                                <h2>Add New Repertoire</small> </h2>
+                        </div>
+                        <div class="icon" style="font-size:2em; text-align:center">
+                            <i class="material-icons" style="font-size:3em;">add</i>
+                        </div>
+                    </div>
+                </div>
+         </a>
 </div>
 </div>
 
