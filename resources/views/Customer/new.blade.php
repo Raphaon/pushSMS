@@ -33,6 +33,11 @@
                     <strong>ERREUR  :</strong> {{ $error }}.
               </div>   
     @endforeach
+    @if(session('status'))
+        <div class="alert alert-danger">
+            <strong>Message  :</strong> {{ sesion('status') }}.
+        </div>   
+    @endif
     <div class="signup-box">
         <div class="logo">
             <a href="javascript:void(0);">PUSH<b>SMS</b></a>

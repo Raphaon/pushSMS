@@ -58,4 +58,12 @@ class RepertoireController extends Controller
         }
         return Contact::where('repertoireID', $this->codeRep)->get();
     }
+
+
+    public function showContact(Request $request)
+    {
+        $id = request('id');
+        $reper = Repertoire::where('Repert_id', $id)->first();
+        return view('Repertoire.ShowContacts', compact('reper'));
+    }
 }

@@ -4,7 +4,7 @@
       <div class="row clearfix">
         @if ($repertoires->count()>0)
             @foreach ($repertoires as $repertoire)
-                <a href="http://">
+      <a href="{{ route('showRepertoireContact', ['id'=>$repertoire->Repert_id]) }}">
                     <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
                          <div class="card">
                             <div class="header">

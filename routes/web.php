@@ -133,3 +133,23 @@ Route::post('/saveRepertoire', [
     'uses' => 'RepertoireController@store',
     'as' => 'saveRepertoire'
 ]);
+
+
+Route::get('/repertoire/{id}/contacts', [
+    'uses' => 'RepertoireController@showContact',
+    'as' => 'showRepertoireContact'
+]);
+
+
+
+
+Route::get('/contact/import', [
+    'uses' => 'ContactController@import',
+    'as' => 'importContact'
+]);
+
+
+Route::post('/saveContact', [
+    'uses' => 'ContactController@importTraitment',
+    'as' => 'importContactTraitment'
+]);

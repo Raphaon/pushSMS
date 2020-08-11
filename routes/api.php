@@ -17,3 +17,27 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('message/{apiKey}/new/{from}/{to}/{message}', function () {return request();});
+Route::post('message/new', function () {
+ /*  {
+        'apikey': 'Your key api', 
+        'from ': 'the-label-whow-the-message-send',
+        'to' : 'the-number-to-whom-you-are-sending-the-message',
+        'message': 'your message'
+    }
+   */ 
+    return request();
+});
+
+
+Route::get('messages/{apiKey}', function () {
+    return request();
+});
+
+
+
+
+
+

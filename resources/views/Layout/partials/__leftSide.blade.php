@@ -65,6 +65,9 @@
                             <li>
                                 <a href="{{ route('newMessage') }}">Add Contacts</a>
                             </li>
+                             <li>
+                                <a href="{{ route('importContact') }}">Import Contacts</a>
+                            </li>
                              
                         </ul>
                     </li>
@@ -76,10 +79,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="{{ route('messages') }}">Repertoires</a>
+                                <a href="{{ route('messages') }}">New</a>
                             </li>
                             <li>
-                                <a href="{{ route('newMessage') }}">Add Contacts</a>
+                                <a href="{{ route('newMessage') }}">New Campagne</a>
                             </li>
                              
                         </ul>
