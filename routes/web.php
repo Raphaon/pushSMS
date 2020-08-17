@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'home'
+]);
+
+
+
+Route::get('/dashboard', [
     'uses' => 'CustomerController@index',
     'as' => 'dashboard'
 ]);
@@ -132,6 +140,18 @@ Route::get('/repertoire/new', [
 Route::post('/saveRepertoire', [
     'uses' => 'RepertoireController@store',
     'as' => 'saveRepertoire'
+]);
+
+
+Route::get('Campagne/new', [
+    'uses' => 'CampagneController@create',
+    'as' => 'newCampagne'
+]);
+
+
+Route::post('Campagne/send', [
+    'uses' => 'CampagneController@store',
+    'as' => 'saveCampagne'
 ]);
 
 

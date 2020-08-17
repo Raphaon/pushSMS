@@ -82,7 +82,7 @@
                                 <a href="{{ route('messages') }}">New</a>
                             </li>
                             <li>
-                                <a href="{{ route('newMessage') }}">New Campagne</a>
+                                <a href="{{ route('newCampagne') }}">New Campagne</a>
                             </li>
                              
                         </ul>

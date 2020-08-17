@@ -11,7 +11,7 @@ class ContactController extends Controller
 {
     public function import() 
     {
-        $repertoires = Repertoire::get();
+        $repertoires = Repertoire::where('customerReff', session('customer')->customerID)->get();
         return view('Contact.Import', compact('repertoires'));
     }
 

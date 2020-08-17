@@ -570,3 +570,47 @@
 20/08/03 21:34:31 ** Disconnected.
 20/08/03 21:34:31 ** Disconnected.
 20/08/03 21:34:31 ** Disconnected.
+20/08/12 06:52:59 ** --- MESSAGE BEGIN ---
+20/08/12 06:52:59 ** To: raphaelgloire@yahoo.fr
+20/08/12 06:52:59 ** Subject: Activation Account
+20/08/12 06:52:59 ** 
+20/08/12 06:52:59 ** Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser 
+20/08/12 06:52:59 ** http://192.168.8.102:8000/activationAccount/dfa4bb3e4de1e3ec8368dff4ec76e740e355e685 si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur 
+20/08/12 06:52:59 **  Merci de votre confiance
+20/08/12 06:52:59 ** --- MESSAGE END ---
+20/08/12 06:53:04 ** Connecting to smtp.gmail.com:587
+20/08/12 06:53:15 ** Connected.
+20/08/12 06:53:15 << 220 smtp.gmail.com ESMTP o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:15 >> EHLO MARTINS.gmail.com<EOL>
+20/08/12 06:53:15 << 250-smtp.gmail.com at your service, [154.72.150.112]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/12 06:53:15 ** Authenticating as pushsmsinfo@gmail.com
+20/08/12 06:53:15 >> STARTTLS<EOL>
+20/08/12 06:53:15 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/12 06:53:16 >> EHLO MARTINS.gmail.com<EOL>
+20/08/12 06:53:16 << 250-smtp.gmail.com at your service, [154.72.150.112]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/12 06:53:16 >> AUTH LOGIN<EOL>
+20/08/12 06:53:16 << 334 VXNlcm5hbWU6<EOL>
+20/08/12 06:53:16 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/12 06:53:16 << 334 UGFzc3dvcmQ6<EOL>
+20/08/12 06:53:16 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/12 06:53:16 << 235 2.7.0 Accepted<EOL>
+20/08/12 06:53:16 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/12 06:53:17 << 250 2.1.0 OK o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:17 >> RCPT TO: <raphaelgloire@yahoo.fr><EOL>
+20/08/12 06:53:17 << 250 2.1.5 OK o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:17 >> DATA<EOL>
+20/08/12 06:53:17 << 354  Go ahead o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:18 >> Date: Wed, 12 Aug 2020 06:53:17 +0100<EOL>
+20/08/12 06:53:18 >> To: raphaelgloire@yahoo.fr<EOL>
+20/08/12 06:53:18 >> Subject: Activation Account<EOL>
+20/08/12 06:53:18 >> <EOL>
+20/08/12 06:53:18 >> Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser <EOL>
+20/08/12 06:53:18 >> http://192.168.8.102:8000/activationAccount/dfa4bb3e4de1e3ec8368dff4ec76e740e355e685 si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur <EOL>
+20/08/12 06:53:18 >>  Merci de votre confiance<EOL>
+20/08/12 06:53:18 >> .<EOL>
+20/08/12 06:53:18 << 250 2.0.0 OK  1597211597 o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:18 >> QUIT<EOL>
+20/08/12 06:53:19 << 221 2.0.0 closing connection o2sm2321485wrh.70 - gsmtp<EOL>
+20/08/12 06:53:19 ** Disconnecting from smtp.gmail.com:587
+20/08/12 06:53:19 ** Disconnected.
+20/08/12 06:53:19 ** Disconnected.

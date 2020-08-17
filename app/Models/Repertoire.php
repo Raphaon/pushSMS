@@ -10,7 +10,7 @@ class Repertoire extends Model
 
     public function getContacts()
     {
-        return Contact::where('repertoireReff', $this->Repert_id)->orderby('created_at', 'desc')->get();
+        return Contact::where('repertoireReff', $this->Repert_id)->orderby('Contact_phone1', 'desc')->get();
     }
 
     public function isExist()

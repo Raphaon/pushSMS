@@ -39,9 +39,6 @@ class CustomerController extends Controller
 
     public function new()
     {
-        if (!Session::has('customer') or !session('customer')->isAuth) {
-            return redirect('login');
-        }
         return view('Customer.new');
     }
 
@@ -113,7 +110,7 @@ class CustomerController extends Controller
             $user->isAuth = true;
             Session::put('customer', $user);
             //dd(session('customer'));
-            return redirect('/');
+            return redirect('/dashboard');
         }
         $message = 'Login ou mot de passe incorrect !!!'; 
         
