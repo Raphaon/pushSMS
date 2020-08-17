@@ -6,16 +6,25 @@ use App\Models\Contact;
 use App\Models\Message;
 use App\Models\Repertoire;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class CampagneController extends Controller
 {
     public function create(){
+
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
+
         $repertoires = Repertoire::where('customerReff', session('customer')->customerID)->get();
         return view('Campagne.new', compact('repertoires'));
     }
 
     public function store(Request $request)
     {
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
        request()->validate([
            'sender'=> ['required'],
            'repertoire' =>  ['required'],

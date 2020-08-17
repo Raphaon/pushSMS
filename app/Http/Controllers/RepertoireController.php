@@ -29,6 +29,9 @@ class RepertoireController extends Controller
     }
 
     public function store(Request $request){
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
 
         request()->validate( [
             'name'=> ['required', 'min:2'],
@@ -62,6 +65,9 @@ class RepertoireController extends Controller
 
     public function showContact(Request $request)
     {
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
         $id = request('id');
         $reper = Repertoire::where('Repert_id', $id)->first();
         return view('Repertoire.ShowContacts', compact('reper'));

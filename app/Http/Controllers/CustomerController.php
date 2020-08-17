@@ -164,6 +164,9 @@ class CustomerController extends Controller
 
     public function Update()
     {
+        if (!Session::has('customer') or !session('customer')->isAuth) {
+            return redirect('login');
+        }
         Customer::where('customerID', session('customer')->customerID)->Update([
 
         ]);
