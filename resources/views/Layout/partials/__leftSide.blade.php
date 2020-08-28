@@ -98,7 +98,7 @@
                                 <a href="{{ route('projects') }}">List</a>
                             </li>
                             <li>
-                                <a href="{{ route('newMessage') }}">New project</a>
+                                <a href="{{ route('newProject') }}">New project</a>
                             </li>
         
                         </ul>

@@ -173,3 +173,19 @@ Route::post('/saveContact', [
     'uses' => 'ContactController@importTraitment',
     'as' => 'importContactTraitment'
 ]);
+
+
+
+Route::get('/project/new', [
+    'uses' => 'ProjectController@new',
+    'as' => 'newProject'
+
+]);
+
+
+
+Route::post('/project/save', [
+    'uses' => 'ProjectController@store',
+    'as' => 'saveProject'
+    
+]);

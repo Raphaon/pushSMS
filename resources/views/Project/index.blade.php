@@ -12,8 +12,8 @@
                            
                         </div>
                         <div class="body">
-                           APK KEY : {{ $project->api_key }} <br><br>
                            LABEL : {{ $project->project_label }} <br><br>
+                           Comment :  {{ $project->Commentaire }} <br><br>
                            Create on : {{ $project->created_at }}
                         </div>
                     </div>

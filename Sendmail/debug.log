@@ -614,3 +614,355 @@
 20/08/12 06:53:19 ** Disconnecting from smtp.gmail.com:587
 20/08/12 06:53:19 ** Disconnected.
 20/08/12 06:53:19 ** Disconnected.
+20/08/28 11:45:14 ** --- MESSAGE BEGIN ---
+20/08/28 11:45:14 ** To: 7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323
+20/08/28 11:45:14 ** Subject: API PROJECT SETTING
+20/08/28 11:45:14 ** 
+20/08/28 11:45:14 ** Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : db944e058f1c4d91f647eef127ec50cc950435ef\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/db944e058f1c4d91f647eef127ec50cc950435ef/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n
+20/08/28 11:45:14 **             send this data 
+20/08/28 11:45:14 **                 \n
+20/08/28 11:45:14 **             { \n
+20/08/28 11:45:14 **                 "apikey": "Your key api", \n
+20/08/28 11:45:14 **                 "from ": "the-label-whow-the-message-send",\n
+20/08/28 11:45:14 **                 "to" : "the-number-to-whom-you-are-sending-the-message",\n
+20/08/28 11:45:14 **                 "message": "your message"\n
+20/08/28 11:45:14 **             }\n
+20/08/28 11:45:14 ** 
+20/08/28 11:45:14 **             to the link 
+20/08/28 11:45:14 **             
+20/08/28 11:45:14 **             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation
+20/08/28 11:45:14 ** --- MESSAGE END ---
+20/08/28 11:45:15 ** Connecting to smtp.gmail.com:587
+20/08/28 11:45:15 ** Connected.
+20/08/28 11:45:15 << 220 smtp.gmail.com ESMTP o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:15 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:45:16 << 250-smtp.gmail.com at your service, [154.72.162.172]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:45:16 ** Authenticating as pushsmsinfo@gmail.com
+20/08/28 11:45:16 >> STARTTLS<EOL>
+20/08/28 11:45:16 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/28 11:45:17 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:45:17 << 250-smtp.gmail.com at your service, [154.72.162.172]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:45:17 >> AUTH LOGIN<EOL>
+20/08/28 11:45:18 << 334 VXNlcm5hbWU6<EOL>
+20/08/28 11:45:18 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/28 11:45:18 << 334 UGFzc3dvcmQ6<EOL>
+20/08/28 11:45:18 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/28 11:45:19 << 235 2.7.0 Accepted<EOL>
+20/08/28 11:45:19 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/28 11:45:19 << 250 2.1.0 OK o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:19 >> RCPT TO: <7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323@gmail.com><EOL>
+20/08/28 11:45:20 << 250 2.1.5 OK o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:20 >> DATA<EOL>
+20/08/28 11:45:20 << 354  Go ahead o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:20 >> Date: Fri, 28 Aug 2020 11:45:20 +0100<EOL>
+20/08/28 11:45:20 >> To: 7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323<EOL>
+20/08/28 11:45:20 >> Subject: API PROJECT SETTING<EOL>
+20/08/28 11:45:20 >> <EOL>
+20/08/28 11:45:20 >> Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : db944e058f1c4d91f647eef127ec50cc950435ef\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/db944e058f1c4d91f647eef127ec50cc950435ef/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n<EOL>
+20/08/28 11:45:20 >>             send this data <EOL>
+20/08/28 11:45:20 >>                 \n<EOL>
+20/08/28 11:45:20 >>             { \n<EOL>
+20/08/28 11:45:20 >>                 "apikey": "Your key api", \n<EOL>
+20/08/28 11:45:20 >>                 "from ": "the-label-whow-the-message-send",\n<EOL>
+20/08/28 11:45:20 >>                 "to" : "the-number-to-whom-you-are-sending-the-message",\n<EOL>
+20/08/28 11:45:20 >>                 "message": "your message"\n<EOL>
+20/08/28 11:45:20 >>             }\n<EOL>
+20/08/28 11:45:20 >> <EOL>
+20/08/28 11:45:20 >>             to the link <EOL>
+20/08/28 11:45:20 >>             <EOL>
+20/08/28 11:45:20 >>             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation<EOL>
+20/08/28 11:45:20 >> .<EOL>
+20/08/28 11:45:22 << 250 2.0.0 OK  1598611522 o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:22 >> QUIT<EOL>
+20/08/28 11:45:22 << 221 2.0.0 closing connection o2sm1440337wrh.70 - gsmtp<EOL>
+20/08/28 11:45:22 ** Disconnected.
+20/08/28 11:45:22 ** Disconnected.
+20/08/28 11:45:22 ** Disconnected.
+20/08/28 11:48:01 ** --- MESSAGE BEGIN ---
+20/08/28 11:48:01 ** To: 7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323
+20/08/28 11:48:01 ** Subject: API PROJECT SETTING
+20/08/28 11:48:01 ** 
+20/08/28 11:48:01 ** Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n
+20/08/28 11:48:01 **             send this data 
+20/08/28 11:48:01 **                 \n
+20/08/28 11:48:01 **             { \n
+20/08/28 11:48:01 **                 "apikey": "Your key api", \n
+20/08/28 11:48:01 **                 "from ": "the-label-whow-the-message-send",\n
+20/08/28 11:48:01 **                 "to" : "the-number-to-whom-you-are-sending-the-message",\n
+20/08/28 11:48:01 **                 "message": "your message"\n
+20/08/28 11:48:01 **             }\n
+20/08/28 11:48:01 ** 
+20/08/28 11:48:01 **             to the link 
+20/08/28 11:48:01 **             
+20/08/28 11:48:01 **             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation
+20/08/28 11:48:01 ** --- MESSAGE END ---
+20/08/28 11:48:02 ** Connecting to smtp.gmail.com:587
+20/08/28 11:48:02 ** Connected.
+20/08/28 11:48:03 << 220 smtp.gmail.com ESMTP a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:03 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:48:03 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:48:03 ** Authenticating as pushsmsinfo@gmail.com
+20/08/28 11:48:03 >> STARTTLS<EOL>
+20/08/28 11:48:03 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/28 11:48:04 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:48:04 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:48:04 >> AUTH LOGIN<EOL>
+20/08/28 11:48:05 << 334 VXNlcm5hbWU6<EOL>
+20/08/28 11:48:05 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/28 11:48:05 << 334 UGFzc3dvcmQ6<EOL>
+20/08/28 11:48:05 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/28 11:48:06 << 235 2.7.0 Accepted<EOL>
+20/08/28 11:48:06 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/28 11:48:06 << 250 2.1.0 OK a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:06 >> RCPT TO: <7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323@gmail.com><EOL>
+20/08/28 11:48:06 << 250 2.1.5 OK a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:06 >> DATA<EOL>
+20/08/28 11:48:07 << 354  Go ahead a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:07 >> Date: Fri, 28 Aug 2020 11:48:07 +0100<EOL>
+20/08/28 11:48:07 >> To: 7fe64d1d0f1e12d6d9d4fdb1725755d27f64f323<EOL>
+20/08/28 11:48:07 >> Subject: API PROJECT SETTING<EOL>
+20/08/28 11:48:07 >> <EOL>
+20/08/28 11:48:07 >> Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n<EOL>
+20/08/28 11:48:07 >>             send this data <EOL>
+20/08/28 11:48:07 >>                 \n<EOL>
+20/08/28 11:48:07 >>             { \n<EOL>
+20/08/28 11:48:07 >>                 "apikey": "Your key api", \n<EOL>
+20/08/28 11:48:07 >>                 "from ": "the-label-whow-the-message-send",\n<EOL>
+20/08/28 11:48:07 >>                 "to" : "the-number-to-whom-you-are-sending-the-message",\n<EOL>
+20/08/28 11:48:07 >>                 "message": "your message"\n<EOL>
+20/08/28 11:48:07 >>             }\n<EOL>
+20/08/28 11:48:07 >> <EOL>
+20/08/28 11:48:07 >>             to the link <EOL>
+20/08/28 11:48:07 >>             <EOL>
+20/08/28 11:48:07 >>             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation<EOL>
+20/08/28 11:48:07 >> .<EOL>
+20/08/28 11:48:08 << 250 2.0.0 OK  1598611689 a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:08 >> QUIT<EOL>
+20/08/28 11:48:08 << 221 2.0.0 closing connection a8sm1304524wrh.86 - gsmtp<EOL>
+20/08/28 11:48:08 ** Disconnected.
+20/08/28 11:48:08 ** Disconnected.
+20/08/28 11:48:08 ** Disconnected.
+20/08/28 11:53:07 ** --- MESSAGE BEGIN ---
+20/08/28 11:53:07 ** To: raphaondobo@gmail.com
+20/08/28 11:53:07 ** Subject: API PROJECT SETTING
+20/08/28 11:53:07 ** 
+20/08/28 11:53:07 ** Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n
+20/08/28 11:53:07 **             send this data 
+20/08/28 11:53:07 **                 \n
+20/08/28 11:53:07 **             { \n
+20/08/28 11:53:07 **                 "apikey": "Your key api", \n
+20/08/28 11:53:07 **                 "from ": "the-label-whow-the-message-send",\n
+20/08/28 11:53:07 **                 "to" : "the-number-to-whom-you-are-sending-the-message",\n
+20/08/28 11:53:07 **                 "message": "your message"\n
+20/08/28 11:53:07 **             }\n
+20/08/28 11:53:07 ** 
+20/08/28 11:53:07 **             to the link 
+20/08/28 11:53:07 **             
+20/08/28 11:53:07 **             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation
+20/08/28 11:53:07 ** --- MESSAGE END ---
+20/08/28 11:53:08 ** Connecting to smtp.gmail.com:587
+20/08/28 11:53:09 ** Connected.
+20/08/28 11:53:09 << 220 smtp.gmail.com ESMTP t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:09 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:53:09 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:53:09 ** Authenticating as pushsmsinfo@gmail.com
+20/08/28 11:53:09 >> STARTTLS<EOL>
+20/08/28 11:53:10 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/28 11:53:11 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:53:11 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:53:11 >> AUTH LOGIN<EOL>
+20/08/28 11:53:11 << 334 VXNlcm5hbWU6<EOL>
+20/08/28 11:53:11 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/28 11:53:12 << 334 UGFzc3dvcmQ6<EOL>
+20/08/28 11:53:12 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/28 11:53:12 << 235 2.7.0 Accepted<EOL>
+20/08/28 11:53:12 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/28 11:53:12 << 250 2.1.0 OK t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:12 >> RCPT TO: <raphaondobo@gmail.com><EOL>
+20/08/28 11:53:13 << 250 2.1.5 OK t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:13 >> DATA<EOL>
+20/08/28 11:53:13 << 354  Go ahead t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:13 >> Date: Fri, 28 Aug 2020 11:53:13 +0100<EOL>
+20/08/28 11:53:13 >> To: raphaondobo@gmail.com<EOL>
+20/08/28 11:53:13 >> Subject: API PROJECT SETTING<EOL>
+20/08/28 11:53:13 >> <EOL>
+20/08/28 11:53:13 >> Hello ondobo mvolo rapha , your new project have been created successfuly.  \n Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83\n to execute query here is the link Api : \n  Method GET : \n http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n<EOL>
+20/08/28 11:53:13 >>             send this data <EOL>
+20/08/28 11:53:13 >>                 \n<EOL>
+20/08/28 11:53:13 >>             { \n<EOL>
+20/08/28 11:53:13 >>                 "apikey": "Your key api", \n<EOL>
+20/08/28 11:53:13 >>                 "from ": "the-label-whow-the-message-send",\n<EOL>
+20/08/28 11:53:13 >>                 "to" : "the-number-to-whom-you-are-sending-the-message",\n<EOL>
+20/08/28 11:53:13 >>                 "message": "your message"\n<EOL>
+20/08/28 11:53:13 >>             }\n<EOL>
+20/08/28 11:53:13 >> <EOL>
+20/08/28 11:53:13 >>             to the link <EOL>
+20/08/28 11:53:13 >>             <EOL>
+20/08/28 11:53:13 >>             \n http://localhost:8000/api/message/newPlease Fill free to contact us for any support or consutate our documenttation<EOL>
+20/08/28 11:53:13 >> .<EOL>
+20/08/28 11:53:14 << 250 2.0.0 OK  1598611995 t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:14 >> QUIT<EOL>
+20/08/28 11:53:15 << 221 2.0.0 closing connection t70sm3441700wmt.3 - gsmtp<EOL>
+20/08/28 11:53:15 ** Disconnected.
+20/08/28 11:53:15 ** Disconnected.
+20/08/28 11:53:15 ** Disconnected.
+20/08/28 11:56:15 ** --- MESSAGE BEGIN ---
+20/08/28 11:56:15 ** To: raphaondobo@gmail.com
+20/08/28 11:56:15 ** Subject: API PROJECT SETTING
+20/08/28 11:56:15 ** 
+20/08/28 11:56:15 ** Hello ondobo mvolo rapha , 
+20/08/28 11:56:15 **         your new project have been created successfuly.
+20/08/28 11:56:15 **         Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83 to execute query here is the link Api : 
+20/08/28 11:56:15 **           Method GET : http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n
+20/08/28 11:56:15 **             send this data   
+20/08/28 11:56:15 **             { 
+20/08/28 11:56:15 **                 "apikey": "Your key api", \n
+20/08/28 11:56:15 **                 "from ": "the-label-whow-the-message-send",\n
+20/08/28 11:56:15 **                 "to" : "the-number-to-whom-you-are-sending-the-message",\n
+20/08/28 11:56:15 **                 "message": "your message"\n
+20/08/28 11:56:15 **             }
+20/08/28 11:56:15 ** 
+20/08/28 11:56:15 **             to the link http://localhost:8000/api/message/new Please Fill free to contact us for any support or consutate our documenttation
+20/08/28 11:56:15 ** --- MESSAGE END ---
+20/08/28 11:56:16 ** Connecting to smtp.gmail.com:587
+20/08/28 11:56:18 ** Connected.
+20/08/28 11:56:18 << 220 smtp.gmail.com ESMTP p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:18 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:56:18 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:56:18 ** Authenticating as pushsmsinfo@gmail.com
+20/08/28 11:56:18 >> STARTTLS<EOL>
+20/08/28 11:56:19 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/28 11:56:19 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 11:56:20 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 11:56:20 >> AUTH LOGIN<EOL>
+20/08/28 11:56:20 << 334 VXNlcm5hbWU6<EOL>
+20/08/28 11:56:20 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/28 11:56:21 << 334 UGFzc3dvcmQ6<EOL>
+20/08/28 11:56:21 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/28 11:56:21 << 235 2.7.0 Accepted<EOL>
+20/08/28 11:56:21 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/28 11:56:21 << 250 2.1.0 OK p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:21 >> RCPT TO: <raphaondobo@gmail.com><EOL>
+20/08/28 11:56:22 << 250 2.1.5 OK p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:22 >> DATA<EOL>
+20/08/28 11:56:22 << 354  Go ahead p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:22 >> Date: Fri, 28 Aug 2020 11:56:22 +0100<EOL>
+20/08/28 11:56:22 >> To: raphaondobo@gmail.com<EOL>
+20/08/28 11:56:22 >> Subject: API PROJECT SETTING<EOL>
+20/08/28 11:56:22 >> <EOL>
+20/08/28 11:56:22 >> Hello ondobo mvolo rapha , <EOL>
+20/08/28 11:56:22 >>         your new project have been created successfuly.<EOL>
+20/08/28 11:56:22 >>         Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83 to execute query here is the link Api : <EOL>
+20/08/28 11:56:22 >>           Method GET : http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work\n Methode POST \n<EOL>
+20/08/28 11:56:22 >>             send this data   <EOL>
+20/08/28 11:56:22 >>             { <EOL>
+20/08/28 11:56:22 >>                 "apikey": "Your key api", \n<EOL>
+20/08/28 11:56:22 >>                 "from ": "the-label-whow-the-message-send",\n<EOL>
+20/08/28 11:56:22 >>                 "to" : "the-number-to-whom-you-are-sending-the-message",\n<EOL>
+20/08/28 11:56:22 >>                 "message": "your message"\n<EOL>
+20/08/28 11:56:22 >>             }<EOL>
+20/08/28 11:56:22 >> <EOL>
+20/08/28 11:56:22 >>             to the link http://localhost:8000/api/message/new Please Fill free to contact us for any support or consutate our documenttation<EOL>
+20/08/28 11:56:22 >> .<EOL>
+20/08/28 11:56:23 << 250 2.0.0 OK  1598612184 p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:23 >> QUIT<EOL>
+20/08/28 11:56:24 << 221 2.0.0 closing connection p1sm3270440wma.0 - gsmtp<EOL>
+20/08/28 11:56:24 ** Disconnecting from smtp.gmail.com:587
+20/08/28 11:56:24 ** Disconnected.
+20/08/28 11:56:24 ** Disconnected.
+20/08/28 12:00:35 ** --- MESSAGE BEGIN ---
+20/08/28 12:00:35 ** To: raphaondobo@gmail.com
+20/08/28 12:00:35 ** Subject: API PROJECT SETTING
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 ** Hello ondobo mvolo rapha , 
+20/08/28 12:00:35 **         your new project have been created successfuly.
+20/08/28 12:00:35 **         Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83 to execute query here is the link Api : 
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **           Method GET : http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work
+20/08/28 12:00:35 **             
+20/08/28 12:00:35 **             Methode POST \n
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **             send this data   
+20/08/28 12:00:35 **             Message { 
+20/08/28 12:00:35 **                 "apikey": "Your key api",
+20/08/28 12:00:35 **                 
+20/08/28 12:00:35 **                 "from ": "the-label-whow-the-message-send",
+20/08/28 12:00:35 **                 
+20/08/28 12:00:35 **                 "to" : "the-number-to-whom-you-are-sending-the-message",
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **                 "message": "your message"\n
+20/08/28 12:00:35 **             }
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **             apikey : the api your receive
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **             from : the label you want to see appearing as the sender
+20/08/28 12:00:35 **             to : the number of the person you want to send the message
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **             message : the message you want to send to the person            
+20/08/28 12:00:35 ** 
+20/08/28 12:00:35 **             to the link http://localhost:8000/api/message/new Please Fill free to contact us for any support or consutate our documenttation
+20/08/28 12:00:35 ** --- MESSAGE END ---
+20/08/28 12:00:36 ** Connecting to smtp.gmail.com:587
+20/08/28 12:00:37 ** Connected.
+20/08/28 12:00:37 << 220 smtp.gmail.com ESMTP v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:37 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 12:00:37 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-STARTTLS<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 12:00:37 ** Authenticating as pushsmsinfo@gmail.com
+20/08/28 12:00:37 >> STARTTLS<EOL>
+20/08/28 12:00:38 << 220 2.0.0 Ready to start TLS<EOL>
+20/08/28 12:00:39 >> EHLO Rapha.gmail.com<EOL>
+20/08/28 12:00:39 << 250-smtp.gmail.com at your service, [154.72.161.164]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+20/08/28 12:00:39 >> AUTH LOGIN<EOL>
+20/08/28 12:00:39 << 334 VXNlcm5hbWU6<EOL>
+20/08/28 12:00:39 >> cHVzaHNtc2luZm9AZ21haWwuY29t<EOL>
+20/08/28 12:00:40 << 334 UGFzc3dvcmQ6<EOL>
+20/08/28 12:00:40 >> cWVnY3dydmdyZHZxa2NkZw==<EOL>
+20/08/28 12:00:40 << 235 2.7.0 Accepted<EOL>
+20/08/28 12:00:40 >> MAIL FROM: <pushsmsinfo@gmail.com><EOL>
+20/08/28 12:00:40 << 250 2.1.0 OK v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:40 >> RCPT TO: <raphaondobo@gmail.com><EOL>
+20/08/28 12:00:41 << 250 2.1.5 OK v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:41 >> DATA<EOL>
+20/08/28 12:00:41 << 354  Go ahead v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:41 >> Date: Fri, 28 Aug 2020 12:00:41 +0100<EOL>
+20/08/28 12:00:41 >> To: raphaondobo@gmail.com<EOL>
+20/08/28 12:00:41 >> Subject: API PROJECT SETTING<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >> Hello ondobo mvolo rapha , <EOL>
+20/08/28 12:00:41 >>         your new project have been created successfuly.<EOL>
+20/08/28 12:00:41 >>         Here is your api key : 9e403394105af72ede640a5e7ecdca2a102c9d83 to execute query here is the link Api : <EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>           Method GET : http://localhost:8000/api/message/9e403394105af72ede640a5e7ecdca2a102c9d83/new/LABEL/650786923/Hello%20your%20Api%20work<EOL>
+20/08/28 12:00:41 >>             <EOL>
+20/08/28 12:00:41 >>             Methode POST \n<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>             send this data   <EOL>
+20/08/28 12:00:41 >>             Message { <EOL>
+20/08/28 12:00:41 >>                 "apikey": "Your key api",<EOL>
+20/08/28 12:00:41 >>                 <EOL>
+20/08/28 12:00:41 >>                 "from ": "the-label-whow-the-message-send",<EOL>
+20/08/28 12:00:41 >>                 <EOL>
+20/08/28 12:00:41 >>                 "to" : "the-number-to-whom-you-are-sending-the-message",<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>                 "message": "your message"\n<EOL>
+20/08/28 12:00:41 >>             }<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>             apikey : the api your receive<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>             from : the label you want to see appearing as the sender<EOL>
+20/08/28 12:00:41 >>             to : the number of the person you want to send the message<EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>             message : the message you want to send to the person            <EOL>
+20/08/28 12:00:41 >> <EOL>
+20/08/28 12:00:41 >>             to the link http://localhost:8000/api/message/new Please Fill free to contact us for any support or consutate our documenttation<EOL>
+20/08/28 12:00:41 >> .<EOL>
+20/08/28 12:00:42 << 250 2.0.0 OK  1598612443 v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:42 >> QUIT<EOL>
+20/08/28 12:00:43 << 221 2.0.0 closing connection v12sm1336458wri.47 - gsmtp<EOL>
+20/08/28 12:00:43 ** Disconnecting from smtp.gmail.com:587
+20/08/28 12:00:43 ** Disconnected.
+20/08/28 12:00:43 ** Disconnected.
