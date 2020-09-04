@@ -11,12 +11,12 @@
 
                   <div class="footer-info">
                     <h3>PUSH SMS</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <p>Create your ecosystem and start sending your message throuth sms because we know that a message is individual your can reach each customer or each partner individualy.</p>
                   </div>
 
                   <div class="footer-newsletter">
                     <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+                    <p>Please fill your this get our Newsletter and get update about us and our new features</p>
                     <form action="" method="post">
                       <input type="email" name="email"><input type="submit"  value="Subscribe">
                     </form>
@@ -28,22 +28,22 @@
                   <div class="footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Terms of service</a></li>
-                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#intro">Home</a></li>
+                      <li><a href="#about">About us</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#team">Team</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
                     </ul>
                   </div>
 
                   <div class="footer-links">
                     <h4>Contact Us</h4>
                     <p>
-                      A108 Adam Street <br>
-                      New York, NY 535022<br>
-                      United States <br>
-                      <strong>Phone:</strong> +1 5589 55488 55<br>
-                      <strong>Email:</strong> info@example.com<br>
+                      Street 6422 YDE<br>
+                     Nouvelle route bastos<br>
+                      Cameroon <br>
+                      <strong>Phone:</strong> +237 695 633 802<br>
+                      <strong>Email:</strong > support@nfsmartsolution.com<br>
                     </p>
                   </div>
 
@@ -65,7 +65,7 @@
             <div class="form">
               
               <h4>Send us a message</h4>
-              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+              <p>Please fill this form and write down your message, your request or what so ever you want to know. <br> It will be a pleasure for us to answer you !! note that we would answer as soon as possible.</p>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

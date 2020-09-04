@@ -43,32 +43,38 @@ class ProjectController extends Controller
         $project->api_key = sha1(md5(session('customerID').request('name')));
         $project->Commentaire = request('comment');
         $project->customerReff = session('customer')->customerID;
-        $mss = 'Hello '.session('customer')->customerName.' , 
-        your new project have been created successfuly.
-        Here is your api key : '.$project->api_key.
-        ' to execute query here is the link Api : 
+        $mss = 
+        'Hello '.session('customer')->customerName.' , 
+         Your new project have been created successfuly.
+        Here is your api key :
+         '.$project->api_key.
+        '
+        please do not share it with people 
 
 
-          Method GET : '
+          Method GET : 
+          
+          '
           . 
         route('sendGetMessage', [
             'apiKey'=> $project->api_key,
             'from' => "LABEL",
             'to'=> '650786923',
-            'message'=>'Hello your Api work']).'
+            'message'=>'Hello_your_Api_work']).'
             
-            Methode POST \n
+            Methode POST 
 
 
             send this data   
-            Message { 
+            
+            { 
                 "apikey": "Your key api",
                 
                 "from ": "the-label-whow-the-message-send",
                 
-                "to" : "the-number-to-whom-you-are-sending-the-message",
+                "to" : "the-number-to-whom-you-send",
 
-                "message": "your message"\n
+                "message": "your message"
             }
 
             apikey : the api your receive
@@ -81,7 +87,17 @@ class ProjectController extends Controller
             to the link '
             . route("sendPostMessage").
 
-            ' Please Fill free to contact us for any support or consutate our documenttation';
+            ' 
+            
+            Please Fill free to contact us on this phone number +237 650786923 for any support 
+            or throuth our email support@pushsms.com 
+            
+            you can also read our documenttation on our web site
+            
+
+            Thank you for you faithfulness .
+            
+            ';
 
         if($project->isExist()){
             $request->session()->flash('msg',  'A project exist already with that name ');

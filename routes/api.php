@@ -39,12 +39,6 @@ Route::post('message/new', [
 
 
 
-Route::get('messages/{apiKey}', function () {
-    return request();
-});
-
-
-
 
 
 
