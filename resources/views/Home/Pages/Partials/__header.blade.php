@@ -29,7 +29,7 @@
           <li class="drop-down"><a href="">Documentation</a>
             <ul>
               <li><a href="#">API</a></li>
-              <li class="drop-down"><a href="#">API</a>
+              <!--li class="drop-down"><a href="#">API</a>
                 <ul>
                   <li><a href="#">API</a></li>
                   <li><a href="#">Manuel</a></li>
@@ -37,10 +37,10 @@
                   <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </li>
+              </li-->
               <li><a href="#">USER GUIDE</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <!--li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li-->
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>

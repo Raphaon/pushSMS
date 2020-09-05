@@ -34,6 +34,37 @@
 
   <main id="main">
 
+    
+<!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      @include('Home.Pages.service')
+   </section><!-- #services -->
+
+
+   
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      @include('Home.Pages.why-us')
+   </section>
+
+
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="pricing" class="wow fadeInUp section-bg">
+      @include('Home.Pages.pricing')
+  </section><!-- #pricing -->
+
+
+
+
+
+    
     <!--==========================
       About Us Section
     ============================-->
@@ -42,19 +73,8 @@
     </section><!-- #about -->
 
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services" class="section-bg">
-       @include('Home.Pages.service')
-    </section><!-- #services -->
+    
 
-    <!--==========================
-      Why Us Section
-    ============================-->
-    <section id="why-us" class="wow fadeIn">
-       @include('Home.Pages.why-us')
-    </section>
 
     <!--==========================
       Call To Action Section
@@ -64,10 +84,10 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="cta-text">For we have the best customer relation manager and we are amoung the best plateforme of bulk sms in cameroon we accompagne compagny in their dream to reach out customer and stay near of them </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Command your plan</a>
           </div>
         </div>
 
@@ -110,19 +130,13 @@
     </section><!-- #clients -->
 
 
-    <!--==========================
-      Pricing Section
-    ============================-->
-    <section id="pricing" class="wow fadeInUp section-bg">
-        @include('Home.Pages.pricing')
-    </section><!-- #pricing -->
-
+   
     <!--==========================
       Frequently Asked Questions Section
-    ============================-->
+    ============================>
     <section id="faq">
-        @include('Home.Pages.faq')
-    </section><!-- #faq -->
+        //@include('Home.Pages.faq')
+    </section>< #faq -->
 
   </main>
 
