@@ -39,9 +39,9 @@
           Regular Plan
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">Odio animi voluptates</li>
-          <li class="list-group-item">Inventore quisquam et</li>
-          <li class="list-group-item">Et perspiciatis suscipit</li>
+          <li class="list-group-item">de 1501 à 5000 SMS</li>
+          <li class="list-group-item">Delivred Status</li>
+          <li class="list-group-item">Unlimted Validity</li>
           <li class="list-group-item">24/7 Support System</li>
         </ul>
         <a href="#" class="btn">Choose Plan</a>
@@ -60,9 +60,9 @@
           Premium Plan
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">Odio animi voluptates</li>
-          <li class="list-group-item">Inventore quisquam et</li>
-          <li class="list-group-item">Et perspiciatis suscipit</li>
+          <li class="list-group-item">de 5001 à 40000 SMS</li>
+          <li class="list-group-item">Delivred Status</li>
+          <li class="list-group-item">Unlimted Validity</li>
           <li class="list-group-item">24/7 Support System</li>
         </ul>
         <a href="#" class="btn">Choose Plan</a>
@@ -83,9 +83,9 @@
           Elite Plan
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">Odio animi voluptates</li>
-          <li class="list-group-item">Inventore quisquam et</li>
-          <li class="list-group-item">Et perspiciatis suscipit</li>
+          <li class="list-group-item">de 40001 à 75 000 SMS</li>
+          <li class="list-group-item">Delivred Status</li>
+          <li class="list-group-item">Unlimted Validity</li>
           <li class="list-group-item">24/7 Support System</li>
         </ul>
         <a href="#" class="btn">Choose Plan</a>
