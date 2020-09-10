@@ -39,8 +39,8 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">CPU USAGE</div>
-                            <div class="number">92%</div>
+                            <div class="text">Delivery</div>
+                            <div class="number">100%</div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                             <i class="material-icons">access_alarm</i>
                         </div>
                         <div class="content">
-                            <div class="text">ALARM</div>
+                            <div class="text">Repertoire</div>
                             <div class="number">07:00 AM</div>
                         </div>
                     </div>
@@ -61,8 +61,8 @@
                             <i class="material-icons">gps_fixed</i>
                         </div>
                         <div class="content">
-                            <div class="text">LOCATION</div>
-                            <div class="number">Turkey</div>
+                            <div class="text">Contacts</div>
+                            <div class="number">00</div>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
 
 
            
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!--div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-cyan hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">help</i>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div-->
             <!-- #END# Widgets -->
             <!-- CPU Usage -->
             
