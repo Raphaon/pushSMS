@@ -42,7 +42,7 @@ class CampagneController extends Controller
                 $msg->sender = $sender;
                 $msg->receiver = $contact->Contact_phone1;
                 $msg->content = $message;
-                //$msg->send();
+                $msg->send();
                 $msg->statusMessage = 'send';
                 $msg->customerReff = session('customer')->customerID;
                 $msg->save();
