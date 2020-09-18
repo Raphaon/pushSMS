@@ -57,6 +57,6 @@ class CampagneController extends Controller
         
 
 
-        return view('Campagne.new', compact('repertoires'));
+        return view('Campagne.new');
     }
 }
