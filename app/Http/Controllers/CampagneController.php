@@ -57,6 +57,6 @@ class CampagneController extends Controller
         
 
         $repertoires = Repertoire::where('customerReff', session('customer')->customerID)->get();
-        return redirect('Campagne/new', ['repertoires'=> $repertoires]);
+        return view('Campagne/new', compact('repertoires'));
     }
 }
