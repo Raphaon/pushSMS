@@ -20,12 +20,13 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li class="active"><a href="#intro">Acceuil</a></li>
+          <li><a href="#whatispush">C'est Quoi ?</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why us?</a></li>
           <!--li><a href="#portfolio">Portfolio</a></li-->
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Tarif</a></li>
+          <!--li><a href="#team">Equipe</a></li-->
           <li class="drop-down"><a href="">Documentation</a>
             <ul>
               <li><a href="#">API</a></li>
@@ -38,12 +39,12 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li-->
-              <li><a href="#">USER GUIDE</a></li>
+              <li><a href="#">Guide utilisateur</a></li>
               <!--li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li-->
             </ul>
           </li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#footer">Nous Contacter</a></li>
           <li><a href="{{ route('login')}}" ><i class="fa fa-user-circle"> Login</i></a></li>
           
         </ul>

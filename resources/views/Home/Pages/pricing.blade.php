@@ -11,19 +11,19 @@
   <div class="col-xs-12 col-lg-3">
     <div class="card">
       <div class="card-header">
-        <h3>15<span class="currency">XAF</span><span class="period">/SMS</span></h3>
+        <h3>13<span class="currency">XAF</span><span class="period">/SMS</span></h3>
       </div>
       <div class="card-block">
         <h4 class="card-title"> 
-          Basic Plan
+          Decouverte
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">de 500 à 1500 SMS</li>
-          <li class="list-group-item">Delivred Status</li>
-          <li class="list-group-item">Unlimted Validity</li>
-          <li class="list-group-item">24/7 Support System</li>
+          <li class="list-group-item">Moins de 500 SMS</li>
+          <li class="list-group-item">Accusé de reception</li>
+          <li class="list-group-item">Validité 30 Jours</li>
+          <li class="list-group-item">24/7 Support technique</li>
         </ul>
-        <a href="#" class="btn">Choose Plan</a>
+        <a href="#" class="btn">Commander</a>
       </div>
     </div>
   </div>
@@ -32,19 +32,19 @@
   <div class="col-xs-12 col-lg-3">
     <div class="card">
       <div class="card-header">
-          <h3>13<span class="currency">.5 XAF</span><span class="period">/SMS</span></h3>
+          <h3>14<span class="currency"> XAF</span><span class="period">/SMS</span></h3>
       </div>
       <div class="card-block">
         <h4 class="card-title"> 
-          Regular Plan
+          Push Starter
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">de 1501 à 5000 SMS</li>
-          <li class="list-group-item">Delivred Status</li>
-          <li class="list-group-item">Unlimted Validity</li>
-          <li class="list-group-item">24/7 Support System</li>
+          <li class="list-group-item">de 501 à 5000 SMS</li>
+          <li class="list-group-item">Accusé de reception</li>
+          <li class="list-group-item">Validite illimité</li>
+          <li class="list-group-item">24/7 Support technique</li>
         </ul>
-        <a href="#" class="btn">Choose Plan</a>
+        <a href="#" class="btn">Commander</a>
       </div>
     </div>
   </div>
@@ -57,15 +57,15 @@
       </div>
       <div class="card-block">
         <h4 class="card-title"> 
-          Premium Plan
+          Push Classic
         </h4>
         <ul class="list-group">
           <li class="list-group-item">de 5001 à 40000 SMS</li>
-          <li class="list-group-item">Delivred Status</li>
-          <li class="list-group-item">Unlimted Validity</li>
-          <li class="list-group-item">24/7 Support System</li>
+          <li class="list-group-item">Accusé de reception</li>
+          <li class="list-group-item">Validite illimité</li>
+          <li class="list-group-item">24/7 Support technique</li>
         </ul>
-        <a href="#" class="btn">Choose Plan</a>
+        <a href="#" class="btn">Commander</a>
       </div>
     </div>
   </div>
@@ -80,15 +80,37 @@
       </div>
       <div class="card-block">
         <h4 class="card-title"> 
-          Elite Plan
+          Push Pro
         </h4>
         <ul class="list-group">
-          <li class="list-group-item">de 40001 à 75 000 SMS</li>
-          <li class="list-group-item">Delivred Status</li>
-          <li class="list-group-item">Unlimted Validity</li>
-          <li class="list-group-item">24/7 Support System</li>
+          <li class="list-group-item">de 40001 à 99 999 SMS</li>
+          <li class="list-group-item">Accusé de reception</li>
+          <li class="list-group-item">Validite illimité</li>
+          <li class="list-group-item">24/7 Support technique</li>
         </ul>
-        <a href="#" class="btn">Choose Plan</a>
+        <a href="#" class="btn">Commander</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-xs-12 col-lg-3">
+    <div class="card">
+      <div class="card-header">
+          <h3>9<span class="currency">.5 XAF</span><span class="period">/SMS</span></h3>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title"> 
+          Push Gold
+        </h4>
+        <ul class="list-group">
+          <li class="list-group-item">de 100 000 à 250 000 SMS</li>
+          <li class="list-group-item">Accusé de reception</li>
+          <li class="list-group-item">Validite illimité</li>
+          <li class="list-group-item">24/7 Support technique</li>
+        </ul>
+        <a href="#" class="btn">Commander</a>
       </div>
     </div>
   </div>

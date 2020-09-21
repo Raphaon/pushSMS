@@ -102,7 +102,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Push SMS</strong>. All Rights Reserved
+        &copy; 2020 Copyright <strong>Push SMS</strong>. All Rights Reserved
        </div>
       <div class="credits">
         <!--

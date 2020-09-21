@@ -18,9 +18,9 @@
     <div class="container d-flex h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Rapid Solution<br>to inform your <span>Customers!</span></h2>
+          <h2>Solution rapide d'envoie de SMS en masse pour informer les <span>Clients!</span></h2>
           <div>
-          <a href="{{ route('register') }}" class="btn-get-started scrollto">Get Started</a>
+          <a href="{{ route('register') }}" class="btn-get-started scrollto">Commencer</a>
           </div>
         </div>
   
@@ -38,6 +38,11 @@
 <!--==========================
       Services Section
     ============================-->
+  <section class="section-bg" id="whatispush">
+    @include('Home.Pages.whatisPush')
+    
+  </section>
+
     <section id="services" class="section-bg">
       @include('Home.Pages.service')
    </section><!-- #services -->
@@ -68,9 +73,9 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about">
-        @include('Home.Pages.about')
-    </section><!-- #about -->
+    <!--section id="about">
+      include('Home.Pages.about')
+    </section--><!-- #about -->
 
 
     
@@ -79,7 +84,7 @@
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
+    <!--section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
@@ -92,14 +97,14 @@
         </div>
 
       </div>
-    </section><!-- #call-to-action -->
+    </section--><!-- #call-to-action -->
 
     <!--==========================
       Features Section
     ============================-->
-    <section id="features">
-        @include('Home.Pages.features')
-    </section><!-- #about -->
+    <!--section id="features">
+        include('Home.Pages.features')
+    </section--><!-- #about -->
 
     <!--==========================
       Portfolio Section
@@ -111,22 +116,22 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="testimonials">
-        @include('Home.Pages.testimony')
-    </section><!-- #testimonials -->
+    <!--section id="testimonials">
+       include('Home.Pages.testimony')
+    </section--><!-- #testimonials -->
 
     <!--==========================
       Team Section
     ============================-->
-    <section id="team" class="section-bg">
-       @include('Home.Pages.ourTeam')
-    </section><!-- #team -->
+    <!--section id="team" class="section-bg">
+       include('Home.Pages.ourTeam')
+    </section--><!-- #team -->
 
     <!--==========================
       Clients Section
     ============================-->
     <section id="clients" class="wow fadeInUp">
-    @include('Home.Pages.ourClient')
+        @include('Home.Pages.ourClient')
     </section><!-- #clients -->
 
 
@@ -135,7 +140,7 @@
       Frequently Asked Questions Section
     ============================>
     <section id="faq">
-        //@include('Home.Pages.faq')
+        //include('Home.Pages.faq')
     </section>< #faq -->
 
   </main>
