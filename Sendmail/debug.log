@@ -1186,3 +1186,72 @@
 20/08/28 17:02:34 ** Disconnected.
 20/08/28 17:02:34 ** Disconnected.
 20/08/28 17:02:34 ** Disconnected.
+20/10/05 15:39:41 ** --- MESSAGE BEGIN ---
+20/10/05 15:39:41 ** To: raphaondobo@gmail.com
+20/10/05 15:39:41 ** Subject: API PROJECT SETTING
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 ** Hello ondobo mvolo rapha , 
+20/10/05 15:39:41 **          Your new project have been created successfuly.
+20/10/05 15:39:41 **         Here is your api key :
+20/10/05 15:39:41 **          07f8eeda82dc568b1fe02a09eaff7349c86c387a
+20/10/05 15:39:41 **         please do not share it with people 
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **           Method GET : 
+20/10/05 15:39:41 **           
+20/10/05 15:39:41 **           http://localhost:8000/api/message/07f8eeda82dc568b1fe02a09eaff7349c86c387a/new/LABEL/650786923/Hello_your_Api_work
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 **             Methode POST 
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             send this data   
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 **             { 
+20/10/05 15:39:41 **                 "apikey": "Your key api",
+20/10/05 15:39:41 **                 
+20/10/05 15:39:41 **                 "from ": "the-label-whow-the-message-send",
+20/10/05 15:39:41 **                 
+20/10/05 15:39:41 **                 "to" : "the-number-to-whom-you-send",
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **                 "message": "your message"
+20/10/05 15:39:41 **             }
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             apikey : the api your receive
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             from : the label you want to see appearing as the sender
+20/10/05 15:39:41 **             to : the number of the person you want to send the message
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             message : the message you want to send to the person            
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             to the link http://localhost:8000/api/message/new 
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 **             Please Fill free to contact us on this phone number +237 650786923 for any support 
+20/10/05 15:39:41 **             or throuth our email support@pushsms.com 
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 **             you can also read our documenttation on our web site
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 ** 
+20/10/05 15:39:41 **             Thank you for you faithfulness .
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 **             
+20/10/05 15:39:41 ** --- MESSAGE END ---
+20/10/05 15:39:43 ** Connecting to smtp.gmail.com:587
+20/10/05 15:39:53 ** Disconnected.
+20/10/05 15:39:53 ** Disconnected.
+20/10/05 15:39:53 ** Disconnected.
+20/10/05 15:39:53 ** Disconnected.
+20/10/05 15:39:54 ** Connect timed out.
+20/11/02 16:20:11 ** --- MESSAGE BEGIN ---
+20/11/02 16:20:11 ** To: test@test111khcom
+20/11/02 16:20:11 ** Subject: Activation Account
+20/11/02 16:20:11 ** 
+20/11/02 16:20:11 ** Utilisez le lien ci-dessous pour activer votre compte pushSMS. afin de commencer à l utiliser 
+20/11/02 16:20:11 ** http://localhost:8000/activationAccount/fdc5b2d43a69a2f4d473c2851e00ff75991fef4b si le lien ne s'active pas automatiquement veuillez svp le copier et coller dans un navigateur 
+20/11/02 16:20:11 **  Merci de votre confiance
+20/11/02 16:20:11 ** --- MESSAGE END ---
+20/11/02 16:20:13 ** Connecting to smtp.gmail.com:587
+20/11/02 16:20:23 ** Disconnected.
+20/11/02 16:20:23 ** Disconnected.
+20/11/02 16:20:23 ** Disconnected.
+20/11/02 16:20:23 ** Disconnected.
+20/11/02 16:20:23 ** Connect timed out.
