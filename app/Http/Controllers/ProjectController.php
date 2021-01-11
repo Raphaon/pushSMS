@@ -102,7 +102,8 @@ class ProjectController extends Controller
         if($project->isExist()){
             $request->session()->flash('msg',  'A project exist already with that name ');
             
-        }else
+        }
+        else
         {
             if($project->save())
             {

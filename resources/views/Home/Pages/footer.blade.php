@@ -66,7 +66,7 @@
               
               <h4>Send us a message</h4>
               <p>Please fill this form and write down your message, your request or what so ever you want to know. <br> It will be a pleasure for us to answer you !! note that we would answer as soon as possible.</p>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="{{ route('customerMessage') }}" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>

@@ -105,6 +105,24 @@
                     </li>
 
 
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">folder</i>
+                            <span>RDV</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="{{ route('newRDV') }}">New</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('newProject') }}">Search </a>
+                            </li>
+        
+                        </ul>
+                    </li>
+
+
                   <li>
                       <a href="http://">
                         <i class="material-icons">bug_report</i>
@@ -113,7 +131,7 @@
                   </li>
 
 
-
+             
 
 
 

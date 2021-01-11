@@ -10,4 +10,8 @@ class HomeController extends Controller
     {
         return view('Home.Index');
     }
+
+    public function sendUsMessage(){
+        
+    }
 }

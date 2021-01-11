@@ -42,10 +42,18 @@ class CampagneController extends Controller
                 $msg->sender = $sender;
                 $msg->receiver = $contact->Contact_phone1;
                 $msg->content = $message;
-                $msg->statusMessage = $msg->send();
+                $msg->statusMessage = 'fail';
                 $msg->customerReff = session('customer')->customerID;
-                $msg->save();
-                $request->session()->flash('status', 'Envois effectué avec success');
+                
+                if($msg->send())
+                {
+                    $msg->statusMessage = 'send';
+                    $msg->save();
+                    $request->session()->flash('status', 'Envois effectué avec success');
+                }else{
+                    $request->session()->flash('status', "Echec d'envois, une erreure est survenue pendant l'envois !");
+                }
+                
             }
         }else
         {

@@ -31,7 +31,7 @@ class MessageController extends Controller
             return redirect('login');
         }
         request()->validate([
-            'sender'=>['required'],
+            'sender'=>['required','max:11'],
             'receiver'=> ['required', 'min:9'],
             'message'=> ['required', 'max:160']
         ]);
@@ -43,7 +43,7 @@ class MessageController extends Controller
                 $sms = new Message();
                 $sms->sender = request('sender');
                 $sms->receiver = $receiver;
-                $sms->statusMessage  = 'send';
+                $sms->statusMessage  = 'fail';
                 $sms->content = request('message');
                 $sms->customerReff = session('customer')->customerID;
                 if(session('customer')->getAvailablleSMS()>=1){
@@ -51,11 +51,14 @@ class MessageController extends Controller
                     $msg = 'Echec de l envoi veuillez reesayer ';
                     if($sms->send())
                     {
+                        $sms->statusMessage  = 'send';
+            
                         if ($sms->save()) {
                             $msg = 'Message envoye avec succes';
+                        }else{
+                            $msg ="Message envoyé avec succes Mais Echec de Sauvegarde du message";
                         }
                     }
-                    
                 }else
                 {
                     $msg  ='Votre forfais SMS est arrivé à epuisement, veuillez soucrire de nouveau';

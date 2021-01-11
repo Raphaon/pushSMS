@@ -38,6 +38,8 @@ Route::get('/logout', [
 ]);
 
 
+
+
 Route::get('/register', [
     'uses' => 'CustomerController@new',
     'as' => 'register'
@@ -69,6 +71,11 @@ Route::post('/auth', [
     'as' => 'auth'
 ]);
 
+
+Route::post('/sendMessage', [
+    'uses' => 'HomeController@sendUsMessage',
+    'as' => 'customerMessage'
+]);
 
 
 
@@ -187,5 +194,14 @@ Route::get('/project/new', [
 Route::post('/project/save', [
     'uses' => 'ProjectController@store',
     'as' => 'saveProject'
+    
+]);
+
+
+
+
+Route::get('/appointment', [
+    'uses' => 'RDVController@create',
+    'as' => 'newRDV'
     
 ]);
