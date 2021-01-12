@@ -15,7 +15,7 @@ class Message extends Model
             
             if($this->getAvailablleSMS()>=1)
             {
-                dd($this->getAvailablleSMS());
+                
                 $url_base = "http://obitsms.com/api/bulksms?username=" . env('PROVIDER_SMS_USERNAME') . "&password=" . env('PROVIDER_SMS_PASSWORD') . "&sender=" . urlencode($this->sender) . "&destination=237" . urlencode($this->receiver) . "&message=" . urlencode($this->content);
                 $ch = curl_init($url_base);
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

@@ -69,6 +69,14 @@
             </div>
 
 
+            @if (session('customer')->getAvailablleSMS()<1)
+            <div>
+                <div class="label-info">
+                    Votre Forfait SMS est Epuisé Veuillez Contacter votre Fournisseur , ou Passer une nouvelle Commande 
+                </div>
+            </div>
+            @endif
+            
 
 
 
