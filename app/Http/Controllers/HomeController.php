@@ -8,10 +8,13 @@ class HomeController extends Controller
 {
     public function index()
     {
+
+
+
         return view('Home.Index');
     }
 
-    public function sendUsMessage(){
-        
+    public function sendUsMessage()
+    {
     }
 }

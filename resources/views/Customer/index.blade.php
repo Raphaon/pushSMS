@@ -33,13 +33,16 @@
                     </div>
                 
                 </div>
+
+                <img src="./img/load.gif" alt="Chargement...">
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-blue hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">Delivery</div>
+                            <div class="text">Delivery<img src="../../images/animation-bg-jpg" alt="Chargement..."></div>
                             <div class="number">100%</div>
                         </div>
                     </div>
@@ -69,10 +72,14 @@
             </div>
 
 
+
+
             @if (session('customer')->getAvailablleSMS()<1)
             <div>
-                <div class="label-info">
+                <div class="label-danger">
+                   <p>
                     Votre Forfait SMS est Epuisé Veuillez Contacter votre Fournisseur , ou Passer une nouvelle Commande 
+                   </p>
                 </div>
             </div>
             @endif
